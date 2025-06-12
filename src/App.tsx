@@ -1,9 +1,10 @@
 import { GlobalStyle } from "./theme/GlobalStyle";
+import { AppRoutes } from "./routes";
 
 function App() {
   return (
     <GlobalStyle>
-      <p>oi</p>
+      <AppRoutes />
     </GlobalStyle>
   );
 }
