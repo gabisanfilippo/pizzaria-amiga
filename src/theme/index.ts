@@ -34,8 +34,12 @@ export const theme = createTheme({
   },
   typography: {
     fontFamily: "Poppins, sans-serif",
+    allVariants: { fontSize: "1rem" },
+    h1: { fontSize: "2rem" },
+    h2: { fontSize: "1.5rem" },
   },
+  spacing: (factor: number) => `${0.5 * factor}rem`, // 1 = 8px = 0.5rem
   components: {},
 });
 
-export const customColors = theme.palette
+export const customColors = theme.palette;
