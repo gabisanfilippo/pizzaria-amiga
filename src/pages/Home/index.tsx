@@ -1,3 +1,5 @@
+import { DefaultLayout } from "../../layouts";
+
 export const Home = () => {
-    return <p>oi</p>
-}
+  return <DefaultLayout>oi</DefaultLayout>;
+};
