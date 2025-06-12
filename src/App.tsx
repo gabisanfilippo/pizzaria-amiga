@@ -1,5 +1,11 @@
+import { GlobalStyle } from "./theme/GlobalStyle";
+
 function App() {
-  return <p>oi</p>;
+  return (
+    <GlobalStyle>
+      <p>oi</p>
+    </GlobalStyle>
+  );
 }
 
 export default App;
