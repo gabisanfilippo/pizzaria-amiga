@@ -9,7 +9,7 @@ export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
       <HeaderLayout />
 
       <Box mx="auto" flex={1} px={3} py={2} width="100%">
-        <Box maxWidth="1300px" component="main">
+        <Box maxWidth="1500px" mx="auto" component="main">
           {children}
         </Box>
       </Box>

@@ -11,7 +11,7 @@ export const FooterLayout = () => {
       px={3}
       py={1}
     >
-      <Typography variant="h6" textAlign="center" maxWidth="1300px">
+      <Typography variant="h6" textAlign="center" maxWidth="1500px" mx="auto" width='100%'>
         Lembre-se: você não é a única que precisa de uma pizza.
       </Typography>
     </Box>

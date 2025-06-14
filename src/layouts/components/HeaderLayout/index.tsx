@@ -11,7 +11,7 @@ export const HeaderLayout = () => {
       px={3}
       py={2}
     >
-      <Box component="section" maxWidth="1300px" mx="auto">
+      <Box component="section" maxWidth="1500px" mx="auto" width="100%">
         Pizzaria amiga
       </Box>
     </Box>
