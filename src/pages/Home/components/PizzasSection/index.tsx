@@ -11,7 +11,13 @@ export const PizzasSection = () => {
   return (
     <Stack component="section" gap={2}>
       <Title>Faça já o seu pedido!</Title>
-      <Stack component="ul" direction="row" gap={2} flexWrap="wrap">
+      <Stack
+        justifyContent="center"
+        direction="row"
+        flexWrap="wrap"
+        component="ul"
+        gap={2}
+      >
         {PIZZAS.map((pizza) => {
           return (
             <Stack
