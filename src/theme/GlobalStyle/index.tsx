@@ -13,6 +13,7 @@ export const GlobalStyle = ({ children }: { children: ReactNode }) => {
             backgroundColor: customColors["white-cream"].main,
             color: customColors["black-coffee"].main,
           },
+          "*": { padding: 0, margin: 0, listStyle: "none" },
         }}
       />
       {children}
