@@ -3,7 +3,7 @@ import { Mushroom } from "../../../assets/svgs/Mushroom";
 import { Cheese } from "../../../assets/svgs/Cheese";
 import { Basil } from "../../../assets/svgs/Basil";
 
-export const moreInformation = [
+export const MORE_INFORMATION = [
   {
     title: "Ingredientes Especiais",
     subtitle: "Saiba mais sobre medidas protetivas e direitos legais",
