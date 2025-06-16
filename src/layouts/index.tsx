@@ -8,7 +8,7 @@ export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
     <Stack height="100vh">
       <HeaderLayout />
 
-      <Box mx="auto" flex={1} px={3} py={2} width="100%">
+      <Box mx="auto" flex={1} px={3} py={2} width="100%" overflow='auto'>
         <Stack maxWidth="1500px" mx="auto" component="main" alignItems="center">
           {children}
         </Stack>
