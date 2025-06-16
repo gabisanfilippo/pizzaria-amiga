@@ -1,8 +1,8 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-import { Title } from "../../../../components/Title";
 import { HOUSE_FLAVORS } from "../../constants/houseFlavors";
+import { Title } from "../../../../components/Title";
 import { customColors } from "../../../../theme";
 
 export const HouseFlavorsSection = () => {
