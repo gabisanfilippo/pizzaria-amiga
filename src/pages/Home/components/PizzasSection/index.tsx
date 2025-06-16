@@ -25,6 +25,10 @@ export const PizzasSection = () => {
                 transition: "transform 0.3s ease-in-out",
                 ":hover": { transform: "scale(1.05)" },
                 cursor: "pointer",
+                width: "100%",
+                "@media (min-width: 540px)": {
+                  width: "15rem",
+                },
               }}
               onClick={() => navigate(pizza.path)}
               justifyContent="center"
@@ -34,11 +38,16 @@ export const PizzasSection = () => {
               component="li"
             >
               <Stack
+                sx={{
+                  width: "100%",
+                  "@media (min-width: 540px)": {
+                    width: "15rem",
+                  },
+                }}
                 bgcolor={customColors["green-basil"].main}
                 justifyContent="center"
                 alignItems="center"
                 borderRadius="8px"
-                width="15rem"
                 zIndex={1}
                 mt="50px"
                 px={3}
@@ -46,6 +55,7 @@ export const PizzasSection = () => {
               >
                 <Typography
                   color={customColors["white-cream"].main}
+                  fontSize="1.2rem"
                   fontWeight={700}
                   component="h2"
                 >
