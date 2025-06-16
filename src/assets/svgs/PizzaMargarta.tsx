@@ -1,6 +1,6 @@
 import type { ISvgProps } from "../../types/commom";
 
-export const Margarita = ({ width, height }: ISvgProps) => {
+export const PizzaMargarita = ({ width, height }: ISvgProps) => {
   return (
     <svg
       width={width ?? "100"}
