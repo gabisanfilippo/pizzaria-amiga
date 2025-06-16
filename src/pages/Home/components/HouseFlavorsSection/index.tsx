@@ -10,7 +10,7 @@ export const HouseFlavorsSection = () => {
 
   return (
     <Stack component="section" gap={2} mt={4}>
-      <Title>Mais informações</Title>
+      <Title>Sabores da casa</Title>
 
       <Stack
         justifyContent="center"
