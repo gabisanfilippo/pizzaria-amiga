@@ -1,12 +1,13 @@
 import { Box, Stack, Typography } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 import { Title } from "../../../../components/Title";
 import { customColors } from "../../../../theme";
 import { PIZZAS } from "../../constants/pizzas";
+import { ModalHelps } from "../ModalHelps";
 
 export const PizzasSection = () => {
-  const navigate = useNavigate();
+  const [isHelpsModalOpen, setIsHelpsModalOpen] = useState(false);
 
   return (
     <Stack component="section" gap={2}>
@@ -30,7 +31,9 @@ export const PizzasSection = () => {
                   width: "15rem",
                 },
               }}
-              onClick={() => navigate(pizza.path)}
+              onClick={() =>
+                pizza.clickCallback({ setModalState: setIsHelpsModalOpen })
+              }
               justifyContent="center"
               alignItems="center"
               position="relative"
@@ -72,6 +75,11 @@ export const PizzasSection = () => {
           );
         })}
       </Stack>
+
+      <ModalHelps
+        isOpen={isHelpsModalOpen}
+        onClose={() => setIsHelpsModalOpen(false)}
+      />
     </Stack>
   );
 };
