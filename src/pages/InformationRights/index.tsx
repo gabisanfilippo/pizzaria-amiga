@@ -11,7 +11,9 @@ export const InformationRights = () => {
   return (
     <DefaultLayout>
       <Stack component="section" gap={3}>
-        <Title>🍕 Menu da Liberdade – Ingredientes que Protegem</Title>
+        <Box component="span" width="max-content">
+          <Title>🍕 Menu da Liberdade – Ingredientes que Protegem</Title>
+        </Box>
 
         <Grid container spacing={3}>
           {LIBERTY_MENU.map((item) => {
