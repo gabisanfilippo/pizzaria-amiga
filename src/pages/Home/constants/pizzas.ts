@@ -1,13 +1,16 @@
+import type { NavigateFunction } from "react-router-dom";
 import type { Dispatch, SetStateAction } from "react";
 
 import { PizzaMozzarella } from "../../../assets/svgs/PizzaMozzarella";
 import { PizzaPepperoni } from "../../../assets/svgs/PizzaPepperoni";
 import { PizzaMushrooms } from "../../../assets/svgs/PizzaMushrooms";
 import { PizzaMargarita } from "../../../assets/svgs/PizzaMargarta";
+import { INFORMATION_RIGHTS } from "../../../constants/paths";
 import { PizzaBacon } from "../../../assets/svgs/PizzaBacon";
 
 interface IClickCallback {
   setModalState: Dispatch<SetStateAction<boolean>>;
+  navigate: NavigateFunction;
 }
 
 export const PIZZAS = [
@@ -21,7 +24,8 @@ export const PIZZAS = [
     title: "Calabresa",
     subtitle: "Informações sobre direitos",
     image: PizzaPepperoni,
-    clickCallback: (params: IClickCallback) => params,
+    clickCallback: ({ navigate }: IClickCallback) =>
+      navigate(INFORMATION_RIGHTS),
   },
   {
     title: "Mussarela",

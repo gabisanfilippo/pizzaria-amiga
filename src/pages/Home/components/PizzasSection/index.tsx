@@ -5,9 +5,11 @@ import { Title } from "../../../../components/Title";
 import { customColors } from "../../../../theme";
 import { PIZZAS } from "../../constants/pizzas";
 import { ModalHelps } from "../ModalHelps";
+import { useNavigate } from "react-router-dom";
 
 export const PizzasSection = () => {
   const [isHelpsModalOpen, setIsHelpsModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <Stack component="section" gap={2}>
@@ -32,7 +34,10 @@ export const PizzasSection = () => {
                 },
               }}
               onClick={() =>
-                pizza.clickCallback({ setModalState: setIsHelpsModalOpen })
+                pizza.clickCallback({
+                  setModalState: setIsHelpsModalOpen,
+                  navigate,
+                })
               }
               justifyContent="center"
               alignItems="center"
