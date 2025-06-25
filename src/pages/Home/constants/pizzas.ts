@@ -5,8 +5,11 @@ import { PizzaMozzarella } from "../../../assets/svgs/PizzaMozzarella";
 import { PizzaPepperoni } from "../../../assets/svgs/PizzaPepperoni";
 import { PizzaMushrooms } from "../../../assets/svgs/PizzaMushrooms";
 import { PizzaMargarita } from "../../../assets/svgs/PizzaMargarta";
-import { INFORMATION_RIGHTS } from "../../../constants/paths";
 import { PizzaBacon } from "../../../assets/svgs/PizzaBacon";
+import {
+  INFORMATION_RIGHTS,
+  COMFORTING_COMBOS,
+} from "../../../constants/paths";
 
 interface IClickCallback {
   setModalState: Dispatch<SetStateAction<boolean>>;
@@ -37,7 +40,8 @@ export const PIZZAS = [
     title: "Bacon",
     subtitle: "Dicas e orientações psicológicas",
     image: PizzaBacon,
-    clickCallback: (params: IClickCallback) => params,
+    clickCallback: ({ navigate }: IClickCallback) =>
+      navigate(COMFORTING_COMBOS),
   },
   {
     title: "Monte sua pizza",
